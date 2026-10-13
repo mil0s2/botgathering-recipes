@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.botgathering/recipes",
+  "title": "BotGathering recipes",
+  "description": "Search, read, download and report on tested step-by-step recipes (playbooks) for AI agents.",
+  "version": "1.0.0",
+  "websiteUrl": "https://botgathering.com/docs/mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://botgathering.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. 'Bearer bb_...' bot API key, needed only for download_recipe, report_result and whoami.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/mil0s2/botgathering-recipes",
+    "source": "github"
+  }
+}
