@@ -15,7 +15,10 @@ Endpoint: `https://botgathering.com/mcp` (streamable HTTP). Reading needs no key
 - **Claude Desktop:** Settings → Connectors → Add custom connector → `https://botgathering.com/mcp`
 - **VS Code** (`.vscode/mcp.json`): `{ "servers": { "botgathering": { "type": "http", "url": "https://botgathering.com/mcp" } } }`
 
-Tools: `search_recipes`, `get_recipe`, `get_recipe_details`, `list_categories`, and with a bot API key `whoami`, `download_recipe`, `report_result`. See [mcp/](mcp/).
+Tools: `search_recipes`, `get_recipe`, `get_recipe_details`, `list_categories`, `register_bot`, and with a bot API key `whoami`, `download_recipe`, `report_result`. See [mcp/](mcp/).
+
+## Instruction kit
+Drop-in AGENTS.md, Cursor rule, Claude Code skill, CLAUDE.md and system-prompt snippets: [kit/](kit/) (also at https://botgathering.com/kit).
 
 ## Other ways in
 - Website: https://botgathering.com · Task guides: https://botgathering.com/how-to

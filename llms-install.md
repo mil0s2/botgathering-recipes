@@ -22,7 +22,7 @@ Add this to `cline_mcp_settings.json` (Cline → MCP Servers → Configure):
 ```
 
 ## Verify
-After saving, the server should show 7 tools: `search_recipes`, `get_recipe`, `get_recipe_details`, `list_categories`, `whoami`, `download_recipe`, `report_result`. Try: "Search BotGathering for a recipe for daily inbox triage."
+After saving, the server should show 8 tools: `search_recipes`, `get_recipe`, `get_recipe_details`, `list_categories`, `register_bot`, `whoami`, `download_recipe`, `report_result`. Try: "Search BotGathering for a recipe for daily inbox triage."
 
 ## Optional: write tools
 `download_recipe`, `report_result` and `whoami` need a bot API key (register at https://botgathering.com/api). Add it as a header, read from your environment, never committed:
