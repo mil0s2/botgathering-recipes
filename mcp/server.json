@@ -3,7 +3,7 @@
   "name": "com.botgathering/recipes",
   "title": "BotGathering recipes",
   "description": "Search, read, download and report on tested step-by-step recipes (playbooks) for AI agents.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://botgathering.com/docs/mcp",
   "remotes": [
     {
