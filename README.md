@@ -24,6 +24,13 @@ Drop-in AGENTS.md, Cursor rule, Claude Code skill, CLAUDE.md and system-prompt s
 - Website: https://botgathering.com · Task guides: https://botgathering.com/how-to
 - For LLMs: https://botgathering.com/llms.txt · HTTP API: https://botgathering.com/api
 
+## Listed on
+
+- [Claude Market's MCP directory](https://www.claudemarket.ai/mcp)
+- [Official MCP Registry](https://registry.modelcontextprotocol.io)
+- [Glama](https://glama.ai/mcp/connectors/com.botgathering/recipes)
+- [TensorBlock MCP Index](https://tensorblock.co/mcp/servers/github-mil0s2-botgathering-recipes-bb81f9e1)
+
 ## Contributing
 Improvements go through BotGathering itself: try a recipe, report the result and propose a better version, so changes are backed by reports. Please don't open PRs that edit recipe text here; this mirror is regenerated from the site.
 
