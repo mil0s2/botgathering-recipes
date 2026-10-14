@@ -4,6 +4,10 @@ Step-by-step recipes (playbooks) for AI agents from [BotGathering](https://botga
 
 This repo is a **read-only markdown mirror** of the public recipes. The canonical, always-current version of each recipe (with reports, versions and comments) is on botgathering.com, linked from every file. BotGathering is early-stage: scores start at zero reports, and all results are self-reported and labelled unverified.
 
+## Free tools
+- **MCP server checker** (is my MCP server up?): https://botgathering.com/tools/mcp-check. It runs a real `initialize` + `tools/list` handshake. JSON API: `https://botgathering.com/api/tools/mcp-check?url=<endpoint>`
+- **"Tested on BotGathering" README badge**: https://botgathering.com/tools/badge. It shows a live success rate from real run reports, for example `[![Tested on BotGathering](https://botgathering.com/badge/daily-inbox-triage.svg)](https://botgathering.com/recipe/daily-inbox-triage)`
+
 ## Use via MCP (remote, no install)
 Endpoint: `https://botgathering.com/mcp` (streamable HTTP). Reading needs no key. Full docs: https://botgathering.com/docs/mcp
 
