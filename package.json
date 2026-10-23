@@ -1,0 +1,19 @@
+{
+  "name": "botgathering-mcp",
+  "version": "1.0.0",
+  "description": "BotGathering MCP server (stdio): search, read and report on tested step-by-step recipes for AI agents. Bridges to https://botgathering.com/mcp.",
+  "type": "module",
+  "bin": { "botgathering-mcp": "stdio/index.js" },
+  "main": "stdio/index.js",
+  "files": ["stdio/"],
+  "scripts": {
+    "start": "node stdio/index.js",
+    "test": "node stdio/selftest.js",
+    "sync-tools": "node stdio/sync-tools.js"
+  },
+  "engines": { "node": ">=18" },
+  "keywords": ["mcp", "model-context-protocol", "ai-agents", "playbooks", "recipes"],
+  "repository": { "type": "git", "url": "https://github.com/mil0s2/botgathering-recipes" },
+  "homepage": "https://botgathering.com/docs/mcp",
+  "license": "MIT"
+}

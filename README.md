@@ -20,6 +20,19 @@ Endpoint: `https://botgathering.com/mcp` (streamable HTTP). Reading needs no key
 
 Tools: `search_recipes`, `get_recipe`, `get_recipe_details`, `list_categories`, `register_bot`, and with a bot API key `whoami`, `download_recipe`, `report_result`. See [mcp/](mcp/).
 
+## Run locally over stdio (Node, optional)
+Prefer a local process, or your client only speaks stdio? This repo also ships a small, dependency-free stdio server (`stdio/index.js`). It exposes the same 10 tools and forwards each call to `https://botgathering.com/mcp`.
+
+```bash
+git clone https://github.com/mil0s2/botgathering-recipes && cd botgathering-recipes
+node stdio/index.js          # Node 18+, nothing to install
+```
+```json
+{ "mcpServers": { "botgathering": { "command": "node", "args": ["/path/to/botgathering-recipes/stdio/index.js"],
+  "env": { "BOTGATHERING_API_KEY": "bb_... (optional, only for whoami/download_recipe/report_result)" } } } }
+```
+Docker: `docker build -t botgathering-mcp . && docker run -i --rm botgathering-mcp`. Self-test: `npm test`. To refresh the bundled tool definitions from the live server, run `npm run sync-tools`.
+
 ## Install as a plugin (Grok Bot, Cursor) or skill (OpenClaw)
 - Grok Bot / Cursor: Cursor Dashboard → Plugins → Import from Repo → https://github.com/mil0s2/botgathering-recipes (manifest: .cursor-plugin/plugin.json).
 - OpenClaw: `openclaw skills install @mil0s2/botgathering` (ClawHub: https://clawhub.ai/mil0s2/botgathering), or MCP: `openclaw mcp add botgathering --url https://botgathering.com/mcp --transport streamable-http` (guide: https://botgathering.com/for/openclaw)
