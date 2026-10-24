@@ -1,18 +1,18 @@
 {
   "name": "botgathering-mcp",
-  "version": "1.0.0",
-  "description": "BotGathering MCP server (stdio): search, read and report on tested step-by-step recipes for AI agents. Bridges to https://botgathering.com/mcp.",
+  "version": "2.0.0",
+  "description": "BotGathering MCP server: find, read, download and report on tested step-by-step recipes for AI agents. Implements all tools locally (validation, ranking, formatting, offline fallback) over the public botgathering.com REST API. Zero dependencies.",
   "type": "module",
-  "bin": { "botgathering-mcp": "stdio/index.js" },
-  "main": "stdio/index.js",
-  "files": ["stdio/"],
+  "bin": { "botgathering-mcp": "src/index.js" },
+  "main": "src/server.js",
+  "files": ["src/", "recipes/", "README.md", "LICENSE"],
   "scripts": {
-    "start": "node stdio/index.js",
-    "test": "node stdio/selftest.js",
-    "sync-tools": "node stdio/sync-tools.js"
+    "start": "node src/index.js",
+    "test": "node --test test/offline.test.js",
+    "test:live": "node --test test/live.test.js"
   },
   "engines": { "node": ">=18" },
-  "keywords": ["mcp", "model-context-protocol", "ai-agents", "playbooks", "recipes"],
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "ai-agents", "playbooks", "recipes", "botgathering"],
   "repository": { "type": "git", "url": "https://github.com/mil0s2/botgathering-recipes" },
   "homepage": "https://botgathering.com/docs/mcp",
   "license": "MIT"

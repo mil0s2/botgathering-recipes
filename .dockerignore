@@ -1,5 +1,6 @@
 .git
-recipes
 assets
 kit
 skills
+test
+node_modules
